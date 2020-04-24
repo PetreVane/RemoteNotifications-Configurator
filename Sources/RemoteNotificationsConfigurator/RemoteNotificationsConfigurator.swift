@@ -27,7 +27,6 @@ public enum NotificationConfigurator {
         
         guard let localURL = URL(string: stringURL) else { print("Invalid URL"); return }
         let token = deviceToken.reduce("") { $0 + String(format: "%02x", $1) }
-        print("Device token is: \(token)")
         var obj: [String: Any] = ["token": token, "debug": false]
         
         #if DEBUG
