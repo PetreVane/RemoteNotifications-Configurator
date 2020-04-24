@@ -4,7 +4,6 @@ This package adds an extension to AppDelegate.
 The extension contains 2 methods, which ease the process of adding (remote) Notifications to any app.
 In order for this to work, you need a server (Vapor or any other server) which provides an API that saves device tokens in a PostgreSQL database.
 
-See chapter 6 in iOS Push Notifications book (Ray Wenderlich) to learn how to build that server with Vapor.
 Once you have your server running, implement these methods in AppDelegate:
 
 
